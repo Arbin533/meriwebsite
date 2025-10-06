@@ -1,139 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Meri Website</title>
-  </head>
-  <body>
-    <h1>Namaste Duniya!</h1>
-    <p>Yeh meri pehli website hai.</p>
-  </body>
-</html><!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meri Cool Website</title>
-    <style>
-        body {
-            background-color: #f0f8ff; /* light blue background */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-        }
-        h1 {
-            color: #ff4500; /* orange-red */
-        }
-        p {
-            color: #333333; /* dark grey */
-            font-size: 18px;
-        }
-        button {
-            background-color: #4CAF50; /* green */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meri Website</title>
+  <style>
+    /* Page Background */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    /* Main Section */
+    .main {
+      text-align: center;
+      padding: 100px 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .main h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .main p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #00ffff;
+      color: black;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome Arbin!</h1>
-    <p>Ye meri thodi colorful aur interactive website hai.</p>
-    <button onclick="alert('Hello Arbin! Website me aapka swagat hai 😄')">Click Me</button>
-</body>
-</html><img src="mypic.jpg" alt="Meri Photo" width="300"><body>
-    <h1>Welcome Arbin!</h1>
-    <p>Ye meri thodi colorful website hai.</p>
-    <img src="mypic.jpg" alt="Meri Photo" width="300">
-</body><!DOCTYPE html>
-<html>
-<head>
-    <title>Meri Cool Website</title>
-    <style>
-        body {
-            background-color: #f0f8ff; /* light blue background */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-        }
-        h1 {
-            color: #ff4500; /* orange-red */
-        }
-        p {
-            color: #333333; /* dark grey */
-            font-size: 18px;
-        }
-        img {
-            margin: 20px;
-            border-radius: 10px;
-        }
-        button, a.button-link {
-            background-color: #4CAF50; /* green */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-        }
-        button:hover, a.button-link:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome Arbin!</h1>
-    <p>Ye meri thodi colorful aur interactive website hai.</p>
+  <nav>
+    <h1>Meri Website</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Image -->
-    <img src="mypic.jpg" alt="Meri Photo" width="300">
+  <div class="main">
+    <h2>Welcome to My Website 🌟</h2>
+    <p>Yeh mera pehla stylish website design hai, bana hai sirf HTML aur CSS se!</p>
+    <button class="btn" onclick="alert('Thanks for visiting my website!')">Click Me</button>
+  </div>
 
-    <!-- Button with alert -->
-    <br>
-    <button onclick="alert('Hello Arbin! Website me aapka swagat hai 😄')">Click Me</button>
-
-    <!-- External link -->
-    <br><br>
-    <a href="https://www.google.com" target="_blank" class="button-link">Google Open Karo</a>
-
-    <!-- Link to second page -->
-    <br><br>
-    <a href="page2.html" class="button-link">Go to Page 2</a>
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-    <title>Page 2</title>
-    <style>
-        body {
-            background-color: #fff0f5; /* light pink */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-        }
-        h1 {
-            color: #8b008b; /* dark purple */
-        }
-        a.button-link {
-            background-color: #4CAF50; /* green */
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        a.button-link:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-    <h1>Ye Page 2 hai</h1>
-    <p>Yahan se aap wapas home page ja sakte ho.</p>
-    <a href="index.html" class="button-link">Wapas Home</a>
+  <footer>
+    © 2025 MeriWebsite | Designed by Arbin Ali
+  </footer>
 </body>
 </html>
