@@ -3,81 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arbin’s Second Hand Store</title>
+  <title>Arbin Store - 2nd Hand Products</title>
   <style>
     body {
+      margin:0;
       font-family: Arial, sans-serif;
-      margin: 0;
       background-color: #eaf3ff;
-      color: #222;
     }
     header {
       background-color: #007bff;
       color: white;
-      text-align: center;
-      padding: 20px;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    header h1 { margin: 0; }
+    header h1 { margin:0; font-size:24px; }
+    .search-bar input {
+      padding:8px; border-radius:5px; border:none; width:200px;
+    }
+    .cart { font-size:20px; cursor:pointer; }
+    nav {
+      background-color: #0056b3;
+      color: white;
+      padding: 10px 20px;
+      display:flex; gap:15px; flex-wrap:wrap;
+    }
+    nav a {
+      color:white; text-decoration:none; font-weight:bold; padding:5px 10px; border-radius:5px;
+      transition: background 0.2s;
+    }
+    nav a:hover { background-color:#003d80; }
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:20px; padding:20px;
     }
     .product {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 15px;
+      background:white; border-radius:10px; padding:15px;
+      box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;
       transition: transform 0.2s;
     }
     .product:hover { transform: translateY(-5px); }
-    .product img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .product h3 { margin: 10px 0 5px; }
-    .product p { margin: 5px 0 10px; color: #555; }
+    .product img { width:100%; height:150px; object-fit:cover; border-radius:10px; }
+    .product h3 { margin:10px 0 5px; font-size:18px; }
+    .product p { margin:5px 0 10px; color:#555; }
     .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+      display:inline-block; padding:10px 15px; background-color:#007bff;
+      color:white; text-decoration:none; border-radius:8px; font-weight:bold;
     }
-    .btn:hover { background-color: #0056b3; }
+    .btn:hover { background-color:#0056b3; }
     footer {
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      background:#007bff; color:white; text-align:center; padding:10px; margin-top:20px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Arbin’s Second Hand Store</h1>
-  <p>Buy & Sell Quality Used Products</p>
+  <h1>Arbin Store</h1>
+  <div class="search-bar"><input type="text" placeholder="Search products..."></div>
+  <div class="cart">🛒</div>
 </header>
+
+<nav>
+  <a href="#">All</a>
+  <a href="#">Mobile</a>
+  <a href="#">Laptop</a>
+  <a href="#">Bag</a>
+  <a href="#">Bike</a>
+  <a href="#">Camera</a>
+  <a href="#">Watch</a>
+</nav>
 
 <div class="container">
   <!-- 20 Products -->
   <div class="product">
-    <img src="https://i.postimg.cc/7JgZ8G26/Bag.jpg" alt="Bag">
+    <img src="https://i.postimg.cc/7JgZ8G26/Bag.jpg" alt="Travel Bag">
     <h3>Travel Bag</h3>
     <p>₹700</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Travel+Bag+(₹700)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://i.postimg.cc/5jv0FGk5/Freeze.jpg" alt="Fridge">
+    <img src="https://i.postimg.cc/5jv0FGk5/Freeze.jpg" alt="Used Fridge">
     <h3>Used Fridge</h3>
     <p>₹6,500</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Used+Fridge+(₹6500)" class="btn">Buy on WhatsApp</a>
@@ -91,49 +100,49 @@
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Mobile" alt="Mobile">
+    <img src="https://via.placeholder.com/200x150?text=Mobile" alt="Used iPhone 11">
     <h3>Used iPhone 11</h3>
     <p>₹29,999</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Used+iPhone+11+(₹29999)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Laptop" alt="Laptop">
+    <img src="https://via.placeholder.com/200x150?text=Laptop" alt="Dell Laptop">
     <h3>Dell Laptop</h3>
     <p>₹19,000</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Dell+Laptop+(₹19000)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Bike" alt="Bike">
+    <img src="https://via.placeholder.com/200x150?text=Bike" alt="Hero Splendor Bike">
     <h3>Hero Splendor Bike</h3>
     <p>₹25,000</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Hero+Splendor+Bike+(₹25000)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Camera" alt="Camera">
+    <img src="https://via.placeholder.com/200x150?text=Camera" alt="Canon DSLR">
     <h3>Canon DSLR</h3>
     <p>₹22,000</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Canon+DSLR+(₹22000)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=TV" alt="TV">
+    <img src="https://via.placeholder.com/200x150?text=TV" alt="Samsung LED TV">
     <h3>Samsung LED TV</h3>
     <p>₹10,000</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Samsung+LED+TV+(₹10000)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Watch" alt="Watch">
+    <img src="https://via.placeholder.com/200x150?text=Watch" alt="Fastrack Smartwatch">
     <h3>Fastrack Smartwatch</h3>
     <p>₹2,000</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Fastrack+Smartwatch+(₹2000)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Table" alt="Table">
+    <img src="https://via.placeholder.com/200x150?text=Table" alt="Wooden Study Table">
     <h3>Wooden Study Table</h3>
     <p>₹3,500</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Wooden+Study+Table+(₹3500)" class="btn">Buy on WhatsApp</a>
@@ -141,49 +150,46 @@
 
   <!-- 10 more placeholder products -->
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Bag" alt="Bag">
+    <img src="https://via.placeholder.com/200x150?text=Bag" alt="School Bag">
     <h3>School Bag</h3>
     <p>₹500</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+School+Bag+(₹500)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Chair" alt="Chair">
+    <img src="https://via.placeholder.com/200x150?text=Chair" alt="Office Chair">
     <h3>Office Chair</h3>
     <p>₹1,200</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Office+Chair+(₹1200)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Speaker" alt="Speaker">
+    <img src="https://via.placeholder.com/200x150?text=Speaker" alt="Bluetooth Speaker">
     <h3>Bluetooth Speaker</h3>
     <p>₹1,500</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Bluetooth+Speaker+(₹1500)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Mic" alt="Mic">
+    <img src="https://via.placeholder.com/200x150?text=Mic" alt="Condenser Mic">
     <h3>Condenser Mic</h3>
     <p>₹2,500</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Condenser+Mic+(₹2500)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Shoes" alt="Shoes">
+    <img src="https://via.placeholder.com/200x150?text=Shoes" alt="Running Shoes">
     <h3>Running Shoes</h3>
     <p>₹900</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Running+Shoes+(₹900)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Book" alt="Book">
+    <img src="https://via.placeholder.com/200x150?text=Book" alt="Python Programming Book">
     <h3>Python Programming Book</h3>
     <p>₹350</p>
     <a href="https://wa.me/919395295077?text=Hi+Arbin,+I+want+to+buy:+Python+Programming+Book+(₹350)" class="btn">Buy on WhatsApp</a>
   </div>
 
   <div class="product">
-    <img src="https://via.placeholder.com/200x150?text=Bag" alt="Bag">
-    <h3>Laptop Bag</h3>
-    <p>₹800</p>
-    <a href="https://wa.me/919395295077?text=Hi+Ar
+    <img src="https://via.placeholder.com/200
